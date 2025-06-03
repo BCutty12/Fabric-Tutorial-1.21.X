@@ -17,7 +17,7 @@ public class ModItems {
         return Registry.register(Registries.ITEM, Identifier.of(TutorialMod.MOD_ID, name), item);
     }
     public static void registerModItems() {
-        TutorialMod.LOGGER.info("Register Mod Items for " +  TutorialMod.MOD_ID);
+        TutorialMod.LOGGER.info("Register Modded Items for " +  TutorialMod.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(PINK_GARNET);
