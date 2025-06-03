@@ -19,6 +19,9 @@ public class ModBlocks {
     public static final Block RAW_PINK_GARNET_BLOCK = registerBlock("raw_pink_garnet_block",
             new Block(AbstractBlock.Settings.create().strength(3f)
                     .requiresTool()));
+    public static final Block INFINERITE_ORE = registerBlock("infinerite_ore",
+            new Block(AbstractBlock.Settings.create().strength(15f)
+                    .requiresTool()));
 
     private static Block  registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -36,6 +39,7 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(ModBlocks.PINK_GARNET_BLOCK);
             fabricItemGroupEntries.add(ModBlocks.RAW_PINK_GARNET_BLOCK);
+            fabricItemGroupEntries.add(ModBlocks.INFINERITE_ORE);
         });
     }
 }
