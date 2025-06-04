@@ -19,11 +19,5 @@ public class ModItems {
     }
     public static void registerModItems() {
         TutorialMod.LOGGER.info("Register Modded Items for " +  TutorialMod.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.add(PINK_GARNET);
-            fabricItemGroupEntries.add(RAW_PINK_GARNET);
-            fabricItemGroupEntries.add(INFINERITE_INGOT);
-        });
     }
 }
