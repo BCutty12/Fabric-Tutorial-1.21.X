@@ -33,6 +33,7 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.tutorialmod.infinerite"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.INFINERITE_INGOT);
+                        entries.add(ModItems.RAW_INFINERITE);
                         entries.add(ModBlocks.INFINERITE_ORE);
                     }).build());
 
