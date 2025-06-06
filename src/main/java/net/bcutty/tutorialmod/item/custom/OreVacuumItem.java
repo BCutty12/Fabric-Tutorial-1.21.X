@@ -1,6 +1,5 @@
 package net.bcutty.tutorialmod.item.custom;
 
-import net.bcutty.tutorialmod.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.Entity;
@@ -27,6 +26,7 @@ public class OreVacuumItem extends Item {
     public OreVacuumItem(Settings settings) {
         super(settings);
     }
+
 
     public ActionResult useOnBlock(ItemUsageContext context, Entity entity) {
         World world = context.getWorld();
