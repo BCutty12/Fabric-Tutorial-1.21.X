@@ -27,13 +27,11 @@ public class MagicBlock extends Block {
         return ActionResult.SUCCESS;
     }
 
-
-    public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity, PlayerEntity player) {
+    @Override
+    public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
         if(entity instanceof ItemEntity itemEntity) {
             if(itemEntity.getStack().getItem() == ModItems.RAW_PINK_GARNET) {
                 itemEntity.setStack(new ItemStack(ModItems.PINK_GARNET, itemEntity.getStack().getCount()));
-                world.playSound(player, pos, SoundEvents.BLOCK_AMETHYST_BLOCK_CHIME, SoundCategory.BLOCKS, 1f,1f);
-
             }
         }
 
